@@ -41,3 +41,9 @@ missingdata <- df[!complete.cases(df), ]
 sum(is.na(missingdata))
 
 View(missingdata)
+
+# Outlier analysis
+
+df2[df2$Rating > 5]
+
+sum(df2$Rating > 5)
